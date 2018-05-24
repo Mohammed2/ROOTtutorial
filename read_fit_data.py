@@ -9,7 +9,7 @@ if len(argv) > 1:
 else:
     filename = 'mydata.dat'
 
-print('====== Reading '+filename)
+print('====== Reading', filename)
 f = open(filename,'r')
 lines = f.readlines()
 x = array('f')
@@ -21,7 +21,7 @@ for line in lines:
             x.append(float(items[0]))
             y.append(float(items[1]))
 f.close()
-print('====== {} data points read into arrays x and y'.format(len(x)))
+print('======', len(x), 'data points read into arrays x and y')
 
 print('====== Plotting data')
 c1 = TCanvas('c1','Straight line fit example',10,10,600,400)

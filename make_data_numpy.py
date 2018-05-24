@@ -28,4 +28,4 @@ for i in range(npt) :
     f.write('{}  {}\n'.format(x,y))
 
 f.close()
-print('====== Wrote {} points to {}'.format(npt,filename))
+print('====== Wrote', npt, 'points to', filename)
